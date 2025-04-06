@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI ZAFAR[221443]</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" sidebarContainer col-2  " id="sidebar">
+                
+              <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Dashboard</h3>
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#" class="active">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a href="#reportsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">  
+                            Reports
+                        </a>
+                        <ul class="collapse list-unstyled" id="reportsSubmenu">
+                            <li>
+                                <a href="#">Daily</a>
+                            </li>
+                            <li>
+                                <a href="#">Weekly</a>
+                            </li>
+                            <li>
+                                <a href="#">Monthly</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#analyticsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                            Analytics
+                        </a>
+                        <ul class="collapse list-unstyled" id="analyticsSubmenu">
+                            <li>
+                                <a href="#">Traffic</a>
+                            </li>
+                            <li>
+                                <a href="#">Conversions</a>
+                            </li>
+                            <li>
+                                <a href="#">Performance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Export
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+                
+            </div>
+            <div class=" content-container col">
+                <header>
+                    <button class="fa fa-bars" id="toggleBtn">
+                        
+                    </button>
+                    <h3>Dashboard Overview</h3>
+                    <button id="themeToggle" class=" btn btn-light">Toggle Theme</button>
+                </header>
+
+                <div class=" cards row">
+                    <div class="col-sm-3 ">
+                      <div class="stats-cards card" >
+                        <div class="card-body">
+                          <h5 class="card-title">Sales</h5>
+                          <p class="card-text">Total sales:$1000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Visitors</h5>
+                            <p class="card-text">Total visitors:1000</p>
+                          </div>
+                        </div>
+                    </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Orders</h5>
+                            <p class="card-text">New ordes:123</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Revenue</h5>
+                            <p class="card-text">Total revenue:$1000</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="chart">
+                    
+                    <canvas id="acquisitions"></canvas>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col-12">
+                      <div class="card">
+                          <div class="card-body">
+                             
+                              <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="searchInput" placeholder="Search items...">
+                              </div>
+                              <div class="table-responsive">
+                                  <table class="table table-hover" id="dataTable">
+                                      <thead>
+                                          <tr class="table-secondary">
+                                              <th>Name</th>
+                                              <th>Value</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Item Alpha</td>
+                                              <td>150</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Item Beta</td>
+                                              <td>250</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Item Gamma</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Item Delta</td>
+                                              <td>400</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Item Epsilon</td>
+                                              <td>500</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+                <!-- Footer -->
+                <footer class="row">
+                  <div class="col-12">
+                      <div class="text-center py-2">
+                          <p class="">© 2025 Responsive Dashboard. All rights reserved.</p>
+                      </div>
+                  </div>
+              </footer>
+                
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"> </script>
+</body>
+</html>

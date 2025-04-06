@@ -1,0 +1,202 @@
+
+.sidebarContainer{
+    background-color: rgb(23, 48, 70);
+    height: 100vh;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+
+.dashboard-container h3{
+    padding: 10px;
+}
+
+/* side bar */
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*Content Container  */
+
+
+#toggleBtn{
+   border: 2px solid rgb(23, 48, 70);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.dashboard-container {
+    display: flex;
+  }
+  
+ 
+  
+  .content-container {
+    background-color: rgb(228, 231, 233);
+    flex-grow: 1; 
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+
+.chart{
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.table-container{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+#search{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 231, 233);
+    margin-bottom: 5px;
+    
+}
+
+table thead tr th{
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding: 8px;
+    color: black;
+    
+}
+
+td{
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+th{
+    padding-left: 20px;
+   
+}
+footer{
+    background-color: rgb(23, 48, 70);
+    color: white;
+}
+
+
+/* dark theme */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .sidebarContainer{
+    background-color: #121212;
+}
+
+.dark-mode #toggleBtn{
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode #themeToggle{
+    background-color: #121212;
+    color: white;
+    
+}
+
+.dark-mode .content-container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .chart {
+    background-color: #000000;
+    color: white;
+}
+
+.dark-mode table thead tr th {
+    background-color: #444;
+    color: white;
+}
+.dark-mode table tbody tr td {
+    background-color: #6b6a6a;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode .btn-light {
+    background-color: #fff;
+    color: black;
+}
+
+.dark-mode .btn-light:hover {
+    background-color: #ddd;
+}
+
+
+
+@media (max-width: 768px) {
+    header h3 {
+      font-size: 18px; 
+    }
+
+    nav h3{
+        font-size: 12px;
+    }
+    
+    li{ 
+        font-size: 12px;
+    }
+    li a{
+       
+        font-size: 12px;
+       
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h3 {
+      font-size: 16px; 
+    }
+  }
+  
+  
+  
+
+
